@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Confidentialité · Victor</title>
+<meta name="description" content="Ce que Victor garde, qui le voit, et comment tout effacer.">
+<link rel="icon" href="icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Kalam:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root { --papier: #FBF7EE; --carte: #FFFDF7; --encre: #1d1b18; --gris: #6b655c; --violet: #4A2BE0; --jaune: #FFE066; --rouge: #C2261C; --point: rgba(29, 27, 24, .14); }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --papier: #17150f; --carte: #221f18; --encre: #f2ecdf; --gris: #b3ab9c; --violet: #a99bff; --jaune: #5a4a10; --point: rgba(242, 236, 223, .12); } }
+:root[data-theme="dark"] { --papier: #17150f; --carte: #221f18; --encre: #f2ecdf; --gris: #b3ab9c; --violet: #a99bff; --jaune: #5a4a10; --point: rgba(242, 236, 223, .12); }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--papier); background-image: radial-gradient(var(--point) 1px, transparent 1.2px); background-size: 22px 22px; color: var(--encre); font-family: 'Kalam', system-ui, sans-serif; font-size: 17px; line-height: 1.55; }
+main { max-width: 760px; margin: 0 auto; padding: 28px 16px 64px; }
+a { color: var(--violet); }
+h1, h2 { font-family: 'Caveat', cursive; font-weight: 700; color: var(--violet); margin: 0; line-height: 1.1; }
+h1 { font-size: 64px; }
+h2 { font-size: 32px; margin-bottom: 6px; }
+nav { display: flex; gap: 14px; flex-wrap: wrap; align-items: center; margin-bottom: 26px; font-weight: 700; }
+nav .logo { display: flex; align-items: center; gap: 10px; text-decoration: none; font-family: 'Caveat', cursive; font-size: 34px; margin-right: auto; }
+nav .logo img { width: 44px; height: 44px; border-radius: 12px; border: 2px solid var(--encre); }
+.sous { font-size: 19px; color: var(--gris); margin: 6px 0 24px; }
+.carte { background: var(--carte); border: 2.5px solid var(--encre); border-radius: 18px 6px 20px 8px; box-shadow: 3px 3px 0 var(--encre); padding: 18px 22px; margin-bottom: 22px; animation: arrive .5s cubic-bezier(.2, 1.3, .4, 1) both; }
+.carte:nth-child(odd) { transform: rotate(-.5deg); } .carte:nth-child(even) { transform: rotate(.5deg); }
+.carte.jaune { background: var(--jaune); }
+.carte p { margin: 0 0 8px; } .carte p:last-child { margin: 0; }
+.carte ul { margin: 0; padding-left: 22px; display: flex; flex-direction: column; gap: 4px; }
+.bouton { display: inline-block; padding: 10px 20px; border: 2.5px solid var(--encre); border-radius: 14px 6px 16px 8px; box-shadow: 3px 3px 0 var(--encre); background: var(--violet); color: #fff; font-weight: 700; text-decoration: none; }
+.date, footer { font-size: 14px; color: var(--gris); }
+footer { margin-top: 30px; }
+@keyframes arrive { from { opacity: 0; translate: 0 14px; } }
+@media (prefers-reduced-motion: reduce) { .carte { animation: none; } }
+@media (max-width: 520px) { h1 { font-size: 50px; } body { font-size: 16px; } }
+</style>
+</head>
+<body>
+<main>
+<nav><a class="logo" href="./"><img src="icon.png" alt="">Victor</a><a href="confidentialite.html">Confidentialité</a><a href="assistance.html">Assistance</a></nav>
+
+<h1>Confidentialité</h1>
+<p class="sous">Ce que Victor garde, qui le voit, et comment tout effacer.</p>
+<section class="carte jaune"><h2>En bref</h2><ul><li>Pas de publicité, pas de pistage, aucune donnée vendue ou cédée.</li><li>Tes notes et ta progression sont à toi : personne d’autre ne les voit.</li><li>Tu peux supprimer ton compte, et tout ce qu’il contient, depuis Réglages.</li></ul></section>
+<section class="carte"><h2>Qui est derrière Victor</h2><p>Victor est une app indépendante, publiée par Morgan Jamain.</p><p>Pour toute question, ou pour exercer tes droits : victor.app.contact@gmail.com.</p></section>
+<section class="carte"><h2>Ce que l’app garde</h2><ul><li>Ton compte : ton adresse e-mail, et le prénom donné par Google ou Apple si tu te connectes avec eux.</li><li>Ton profil : ton pseudo et ta filière.</li><li>Ce que tu écris : tes notes, fiches, écrits, carnet de terrain, heures et absences d’alternance.</li><li>Ta progression de révision : XP, série, badges, résultats des quiz.</li><li>Ta promo : la promo que tu as rejointe et ton rôle (membre ou propriétaire).</li><li>Tes compléments proposés au classeur de la promo, et l’avis de Victor dessus.</li><li>Le nombre de questions posées à Victor chaque jour (pas leur contenu).</li></ul></section>
+<section class="carte"><h2>Ce qui reste sur ton téléphone</h2><p>Ta conversation avec Victor, ton style et tes réglages d’affichage restent sur ton téléphone. Ils ne sont pas gardés sur nos serveurs.</p></section>
+<section class="carte"><h2>Qui voit quoi</h2><ul><li>Toi seul vois tes notes, fiches, écrits, ton terrain, ton alternance et ta conversation avec Victor.</li><li>Les membres de ta promo voient ton pseudo, ton XP, ta série et ta ligue dans le classement de la promo.</li><li>Le propriétaire de ta promo voit les compléments que tu proposes. S’il en valide un, il est ajouté au classeur partagé de la promo avec la mention « complément de » suivie de ton pseudo.</li></ul></section>
+<section class="carte"><h2>Victor, l’assistant</h2><p>Victor est un agent d’intelligence artificielle conçu et réglé spécialement pour les études de travail social : il connaît le classeur, le programme et les attentes de la formation. Pour réfléchir et écrire, il s’appuie sur différents grands modèles de langage (LLM), fournis par des entreprises spécialisées.</p><p>Pour te répondre, Victor leur envoie ta question, le début de la conversation et les notes utiles (les tiennes et celles du classeur de ta promo). Les compléments que tu proposes leur sont aussi envoyés pour être relus. Rien n’est envoyé avant ton accord, demandé la première fois, et que tu peux retirer à tout moment dans Réglages › Ton compte.</p><p>Ces fournisseurs traitent ces données seulement pour produire la réponse : ils ne s’en servent ni pour entraîner leurs modèles, ni pour de la publicité. Ne confie pas à Victor d’informations sur des personnes accompagnées : le secret professionnel s’applique aussi ici.</p></section>
+<section class="carte"><h2>Où sont tes données</h2><ul><li>Supabase (base de données et connexion), serveurs en Union européenne (Francfort).</li><li>Victor : les fournisseurs de modèles d’intelligence artificielle (LLM) sur lesquels il s’appuie, dont certains aux États-Unis. Ces transferts sont encadrés par les clauses contractuelles types de la Commission européenne.</li><li>Google ou Apple, seulement si tu choisis de te connecter avec eux.</li><li>Chacun de ces prestataires s’engage, par contrat, à protéger tes données au moins autant que le prévoit cette politique.</li></ul></section>
+<section class="carte"><h2>Combien de temps</h2><p>Tes données sont gardées tant que ton compte existe. Quand tu le supprimes, tout est effacé tout de suite, sauf un complément déjà ajouté au classeur partagé de ta promo, qui y reste avec ton pseudo.</p></section>
+<section class="carte"><h2>Tes droits</h2><p>Tu peux voir et corriger tes données dans l’app, et tout supprimer depuis Réglages › Ton compte › Supprimer mon compte. Tu peux aussi demander une copie de tes données, ou t’opposer à un traitement (RGPD).</p><p>Pour toute question, ou pour exercer tes droits : victor.app.contact@gmail.com.</p><p>Si tu penses que tes droits ne sont pas respectés, tu peux t’adresser à la CNIL (cnil.fr).</p></section>
+<section class="carte"><h2>Âge</h2><p>Victor est fait pour les étudiants en formation de travail social. Il faut avoir au moins 15 ans pour créer un compte.</p></section>
+<p class="date">Mise à jour : 24 novembre 2026</p>
+
+<footer>Victor, publié par Morgan Jamain · <a href="mailto:victor.app.contact@gmail.com">victor.app.contact@gmail.com</a></footer>
+</main>
+</body>
+</html>
