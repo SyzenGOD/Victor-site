@@ -3,6 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<meta name="theme-color" content="#FBF7EE">
 <title>Assistance · Victor</title>
 <meta name="description" content="Une question sur Victor ? Écris-nous.">
 <link rel="icon" href="icon.png">
@@ -10,9 +12,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Kalam:wght@400;700&display=swap" rel="stylesheet">
 <style>
-:root { --papier: #FBF7EE; --carte: #FFFDF7; --encre: #1d1b18; --gris: #6b655c; --violet: #4A2BE0; --jaune: #FFE066; --rouge: #C2261C; --point: rgba(29, 27, 24, .14); }
-@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --papier: #17150f; --carte: #221f18; --encre: #f2ecdf; --gris: #b3ab9c; --violet: #a99bff; --jaune: #5a4a10; --point: rgba(242, 236, 223, .12); } }
-:root[data-theme="dark"] { --papier: #17150f; --carte: #221f18; --encre: #f2ecdf; --gris: #b3ab9c; --violet: #a99bff; --jaune: #5a4a10; --point: rgba(242, 236, 223, .12); }
+:root { color-scheme: light; --papier: #FBF7EE; --carte: #FFFDF7; --encre: #1d1b18; --gris: #6b655c; --violet: #4A2BE0; --jaune: #FFE066; --rouge: #C2261C; --point: rgba(29, 27, 24, .14); }
 * { box-sizing: border-box; }
 body { margin: 0; background: var(--papier); background-image: radial-gradient(var(--point) 1px, transparent 1.2px); background-size: 22px 22px; color: var(--encre); font-family: 'Kalam', system-ui, sans-serif; font-size: 17px; line-height: 1.55; }
 main { max-width: 760px; margin: 0 auto; padding: 28px 16px 64px; }
